@@ -1,246 +1,321 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sushmitha's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Critical for Mobile -->
+    <!-- SEO & Social Sharing -->
+    <meta property="og:title" content="Sushmitha Basavaraju | AI & Software Developer">
+    <meta property="og:description" content="Full-Stack Engineer transitioning into AI. View my portfolio and projects.">
+    <meta property="og:image" content="https://your-website.com/images/img2.png"> <!-- Use your real URL once hosted -->
+    <meta property="og:url" content="https://your-website.com">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-  </head>
-  <body>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
 
-    <div class="scrollToTop-btn">
-      <i class="fas fa-angle-up"></i>
-    </div>
-
+    <!-- NAVIGATION HEADER -->
     <header>
-      <a href="#" class="brand">Portfolio</a>
-      <div class="menu-btn"></div>
-      <div class="navigation">
-        <a href="#main">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills & Experience</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </div>
+        <a href="#" class="brand">Sushmitha<span class="dot">.</span></a>
+        
+        <!-- Desktop Nav -->
+        <div class="navigation">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#resume" class="nav-link">Resume</a>
+            <a href="#contact" class="nav-link">Contact Me</a>
+        </div>
+
+        <!-- Mobile Menu Icon -->
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
 
-    <section class="main" id="main">
-      <div class="content">
-        <h2>Hello, I'm<br><span>Sushmitha B</span></h2>
-        <p>A passionate <strong style="font-weight: 600;">Full Stack Developer</strong> with experience in building responsive
-          web applications, creating dynamic user interfaces, and developing robust APIs.</p>
-        <div class="animated-text">
-          <h3>Web Developer</h3>
-          <h3>Front-end Developer</h3>
-          <h3>API Developer</h3>
+    <!-- FLOATING CONTROLS -->
+    <div class="floating-controls">
+        <!-- Theme Toggle -->
+        <div class="theme-btn">
+            <i class="fas fa-moon"></i>
         </div>
-        <a href="https://drive.google.com/file/d/12J1nc_-Q9u9kEjXs22NH1xUlzgUBNAYB/view?usp=drive_link" class="btn" target="_blank">
-          Download Resume
-        </a>
-      </div>
+        <!-- Scroll To Top -->
+        <div class="scrollToTop-btn">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="about">
+        <div class="hero-container">
+            <!-- Text Side -->
+            <div class="hero-text">
+                <!-- Status Badge -->
+                <div class="status-badge">
+                    <span class="pulse-light"></span>
+                    <span>Open to New Opportunities</span>
+                </div>
+                
+                <div class="typewriter-container">
+                    <span class="static-text">I am a </span>
+                    <span class="typewriter-text"></span><span class="cursor">|</span>
+                </div>
+
+                <p class="hero-description">
+                    Combining <strong>Professional Software Engineering</strong> with advanced <strong>Machine Learning</strong>. 
+                    Currently building intelligent systems as an MSc student at QMUL, London.
+                </p>
+                
+                <div class="btn-group">
+                    <!-- Update with your actual PDF filename -->
+                    <a href="Sushmitha_Basavaraju_CV.pdf" target="_blank" class="btn primary-btn">
+                        Download CV <i class="fas fa-download"></i>
+                    </a>
+                    <a href="https://github.com/" target="_blank" class="btn secondary-btn">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Visual Side -->
+            <div class="hero-visual">
+                <div class="blob-bg"></div>
+                <img src="images/img2.png" alt="Sushmitha Profile" class="hero-img">
+                
+                <div class="orbit-icon icon-python"><i class="fab fa-python"></i></div>
+                <div class="orbit-icon icon-react"><i class="fab fa-react"></i></div>
+                <div class="orbit-icon icon-db"><i class="fas fa-database"></i></div>
+                <div class="orbit-icon icon-cloud"><i class="fab fa-aws"></i></div>
+            </div>
+        </div>
     </section>
 
-    <section class="about" id="about">
-      <div class="title reveal">
-        <h2 class="section-title">About Me</h2>
-      </div>
-      <div class="content">
-        <div class="column col-left reveal">
-          <div class="img-card">
-            <img src="images/img2.png" alt="">
-          </div>
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <h2 class="section-title">Technical Expertise</h2>
+        <div class="grid-container">
+            <div class="card">
+                <div class="card-header-flex">
+                    <i class="fas fa-brain icon"></i>
+                    <h3>AI & Data</h3>
+                </div>
+                <div class="tag-container">
+                    <span class="tag">Python</span>
+                    <span class="tag">Computer Vision</span>
+                    <span class="tag">Deep Learning</span>
+                    <span class="tag">Pandas</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header-flex">
+                    <i class="fas fa-server icon"></i>
+                    <h3>Backend</h3>
+                </div>
+                <div class="tag-container">
+                    <span class="tag">Java</span>
+                    <span class="tag">PHP (Laravel)</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">MongoDB</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header-flex">
+                    <i class="fas fa-laptop-code icon"></i>
+                    <h3>Frontend & Tools</h3>
+                </div>
+                <div class="tag-container">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">React.js</span>
+                    <span class="tag">Firebase</span>
+                    <span class="tag">SendGrid</span>
+                    <span class="tag">Git</span>
+                </div>
+            </div>
         </div>
-        <div class="column col-right reveal">
-          <h2 class="content-title">Hey there! I'm Sushmitha B</h2>
-          <p class="paragraph-text">I am a Full Stack Developer specializing in web applications, with a strong foundation in coding, problem-solving, and scalable software development. With 1.3 years of hands-on experience, I am proficient in both front-end and back-end technologies. I specialize in creating APIs, handling front-end development, and building responsive, static and dynamic web applications. I thrive in collaborative workplaces, rapidly adapt to new technologies and processes, and am passionate about providing efficient, user-friendly, and high-quality software solutions.</p>
-        </div>
-      </div>
     </section>
 
-    <section class="skills" id="skills">
-      <div class="title reveal">
-        <h2 class="section-title">Skills and Experiences</h2>
-      </div>
-      <div class="content">
-        <div class="experience-section">
-          <h2 class="section-title1">Experiences</h2>
-          <h2>Software Developer | Globussoft Technologies</h2>
-          <p><strong>📍 Bangalore, India | September 2023 – Present</strong></p>
-          
-          <h3>Key Contributions:</h3>
-          <ul>
-              <li><strong>Dynamic QR Code API:</strong> Designed and developed an API for generating dynamic QR codes.</li>
-              <li><strong>Real-Time Notifications:</strong> Integrated Firebase push notifications to track and monitor user activities.</li>
-              <li><strong>Social Media Automation:</strong> Built a feature to convert shared URLs into seamless Facebook posts.</li>
-              <li><strong>Custom URL Verification:</strong> Developed functionality to verify URLs based on platform names and social networks.</li>
-              <li><strong>Seamless Login:</strong> Integrated Google and Apple login options for enhanced user accessibility.</li>
-              <li><strong>Versatile QR Code Generation:</strong> Enabled QR code creation for various platforms (Text, WhatsApp, SMS, WiFi, Twitter, Skype, Zoom), ensuring smooth redirection.</li>
-              <li><strong>Automated Email Notifications:</strong> Integrated <em>SendGrid API</em> to send automated emails based on user actions.</li>
-              <li><strong>Time Tracking Calculator:</strong> Built a tool to track daily and weekly work hours for improved task management.</li>
-              <li><strong>User Analytics & Insights:</strong> Leveraged <em>Google Analytics</em> to analyze user behavior patterns and drive data-driven decisions.</li>
-              <li><strong>Client-Centric Software Solutions:</strong> Designed and implemented custom software solutions to enhance system functionality and user experience.</li>
-          </ul>
-      
-          <h3>Tech Stack:</h3>
-          <ul>
-              <li><strong>Front-end:</strong> JavaScript (for dynamic UI interactions).</li>
-              <li><strong>Back-end:</strong> PHP (Laravel framework).</li>
-          </ul>
-        </div>
-        <div class="column col-right reveal" style="padding-left: 20px;">
-          <div class="skills-content">
-            <h2 class="section-title2">Technical Skills</h2>
-            <!-- Programming Languages -->
-            <div class="skill-category">
-                <h3>💻 Programming Languages</h3>
-                <ul>
-                    <li><i class="fas fa-code"></i> Java</li>
-                    <li><i class="fab fa-html5"></i> HTML5</li>
-                    <li><i class="fab fa-css3-alt"></i> CSS3</li>
-                </ul>
+    <!-- RESUME SECTION -->
+    <section id="resume">
+        <h2 class="section-title">Experience & Education</h2>
+        
+        <div class="split-layout">
+            
+            <!-- LEFT: EXPERIENCE -->
+            <div class="column left-col">
+                <h3 class="col-title"><i class="fas fa-briefcase"></i> Experience</h3>
+                
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <div>
+                            <h4>Software Developer</h4>
+                            <span class="company">Globussoft Technologies</span>
+                        </div>
+                        <span class="date-badge">2023 - 2025</span>
+                    </div>
+
+                    <p class="job-summary">
+                      Core contributor to the Dynamic QR Code platform. I engineered scalable REST APIs, implemented real-time notifications via Firebase, and developed secure authentication modules used by thousands of users.
+                    </p>
+
+                    <div class="achievement-banner">
+                        <i class="fas fa-trophy"></i> <strong>Best Employee 2024</strong>: Awarded for reducing API latency & critical delivery.
+                    </div>
+
+                    <div class="tech-stack-row">
+                        <span class="mini-chip">PHP Laravel</span>
+                        <span class="mini-chip">MySQL</span>
+                        <span class="mini-chip">Firebase</span>
+                        <span class="mini-chip">OAuth2</span>
+                        <span class="mini-chip">SendGrid</span>
+                        <span class="mini-chip">Google Analytics</span>
+                    </div>
+                </div>
             </div>
-    
-            <!-- Backend Development -->
-            <div class="skill-category">
-                <h3>⚙️ Backend Development</h3>
-                <ul>
-                    <li><i class="fab fa-php"></i> PHP</li>
-                    <li><i class="fas fa-server"></i> Laravel</li>
-                    <li><i class="fab fa-node-js"></i> Node.js</li>
-                    <li><i class="fas fa-code-branch"></i> Express.js</li>
-                </ul>
-            </div>
-    
-            <!-- Database & Other Technologies -->
-            <div class="skill-category">
-                <h3>🗄️ Databases & Technologies</h3>
-                <ul>
-                    <li><i class="fas fa-database"></i> SQL</li>
-                    <li><i class="fas fa-database"></i> MongoDB</li>
-                    <li><i class="fas fa-chart-line"></i> Google Analytics</li>
-                    <li><i class="fas fa-bell"></i> Firebase</li>
-                    <li><i class="fas fa-envelope"></i> SendGrid API</li>
-                </ul>
+
+            <!-- RIGHT: EDUCATION -->
+            <div class="column right-col">
+                <h3 class="col-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                
+                <!-- MSc Card -->
+                <div class="timeline-card education-card">
+                    <div class="card-header">
+                        <div>
+                            <h4>MSc Machine Learning</h4>
+                            <span class="company">Queen Mary University of London</span>
+                        </div>
+                        <i class="fas fa-university card-icon-bg"></i>
+                    </div>
+                    <p class="edu-detail">
+                        Specializing in <strong>Visual Data Analytics</strong> and <strong>AI Ethics</strong>.
+                    </p>
+                    <div class="status-indicator">
+                        <span class="pulse-dot"></span> Currently Pursuing
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
-      </div>
     </section>
 
-
-    <section class="education" id="education">
-      <div class="title reveal">
-        <h2 class="section-title">Education</h2>
-      </div>
-      <div class="timeline">
-        <!-- RV College of Engineering -->
-        <div class="container left">
-          <div class="education-content">
-            <h2>2022</h2>
-            <h3>RV College of Engineering</h3>
-            <span class="degree">Bachelor's of Engineering in Telecommunication</span>
-            <p><strong>CGPA:</strong> 6.33</p>
-            <p><strong>Location:</strong> Bengaluru, Karnataka</p>
-            <p><strong>Duration:</strong> 2018 – 2022</p>
-          </div>
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <h2 class="section-title">Let's Connect</h2>
+        <p>Currently based in London, UK</p>
+        <div class="social-links">
+            <a href="mailto:sushmithabasavaraju6@gmail.com" class="social-btn"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/sushmitha-basavaraju/" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+            <a href="https://www.hackerrank.com/profile/sushmithab232001" target="_blank" class="social-btn"><i class="fab fa-hackerrank"></i></a>
         </div>
-    
-        <!-- ASC Independent PU College -->
-        <div class="container right">
-          <div class="education-content">
-            <h2>2018</h2>
-            <h3>ASC Independent PU College</h3>
-            <span class="course">P.U.C PCMB</span>
-            <p><strong>Percentage:</strong> 66.83%</p>
-            <p><strong>Location:</strong> Bengaluru, Karnataka</p>
-            <p><strong>Duration:</strong> 2016 – 2018</p>
-          </div>
-        </div>
-    
-        <!-- Siddaganga Public School -->
-        <div class="container left">
-          <div class="education-content">
-            <h2>2016</h2>
-            <h3>Siddaganga Public School</h3>
-            <span class="board">CBSE</span>
-            <p><strong>CGPA:</strong> 9</p>
-            <p><strong>Location:</strong> Bengaluru, Karnataka</p>
-            <p><strong>Duration:</strong> 2016</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-
-    <section class="contact" id="contact">
-      <div class="title reveal">
-        <h2 class="section-title">Contact Me</h2>
-      </div>
-      <div class="content">
-        <div class="row">
-          <div class="card reveal">
-            <div class="contact-icon">
-              <i class="fas fa-phone"></i>
-            </div>
-            <div class="info">
-              <h3>Phone</h3>
-              <p>+91 8310006442</p>
-            </div>
-          </div>
-          <div class="card reveal">
-            <div class="contact-icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div class="info">
-              <h3>Email</h3>
-              <p>
-                <a href="mailto:sushmithab232001@gmail.com">sushmithab232001@gmail.com</a>
-              </p>
-            </div>
-          </div>
-          <div class="card reveal">
-            <div class="contact-icon">
-              <i class="fab fa-linkedin-in" style="color: #3a6cf4;"></i>
-            </div>
-            <div class="info">
-              <h3>LinkedIn</h3>
-              <a href="https://www.linkedin.com/in/sushmitha-b-13a02521b" target="_blank" rel="noopener noreferrer">
-                Connect on LinkedIn
-              </a>
-            </div>
-          </div>
-          <div class="card reveal">
-            <div class="contact-icon">
-              <i class="fas fa-code"></i>
-            </div>
-            <div class="info">
-              <h3>HackerRank</h3>
-              <a href="https://www.hackerrank.com/sushmithab232001?hr_r=1" target="_blank" rel="noopener noreferrer">
-                View HackerRank Profile
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <footer class="footer">
-      <div class="footer-icons">
-        <a href="tel:+918310006442" target="_blank"><i class="fas fa-phone"></i></a>
-        <a href="mailto:sushmithab232001@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/sushmitha-b-13a02521b" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://www.hackerrank.com/sushmithab232001?hr_r=1" target="_blank" rel="noopener noreferrer">
-          <i class="fas fa-code"></i>
-        </a>
-      </div>
-      <p>@ 2025 Sushmitha B. All rights reserved.</p>
+    <footer>
+        <p>&copy; 2025 Sushmitha Basavaraju. Built with code.</p>
     </footer>
-    
 
-    <script src="script.js" charset="utf-8"></script>
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+      // 1. TYPEWRITER EFFECT
+      const textElement = document.querySelector(".typewriter-text");
+      const texts = ["Software Developer", "AI Enthusiast", "Backend Engineer"];
+      let textIndex = 0; 
+      let charIndex = 0; 
+      let isDeleting = false;
 
-  </body>
+      function typeEffect() {
+          const currentWord = texts[textIndex];
+          if (isDeleting) charIndex--; 
+          else charIndex++;
+          textElement.textContent = currentWord.substring(0, charIndex);
+          let typeSpeed = isDeleting ? 50 : 100;
+          if (!isDeleting && charIndex === currentWord.length) {
+              typeSpeed = 2000; isDeleting = true;
+          } else if (isDeleting && charIndex === 0) {
+              isDeleting = false;
+              textIndex = (textIndex + 1) % texts.length;
+              typeSpeed = 500;
+          }
+          setTimeout(typeEffect, typeSpeed);
+      }
+      document.addEventListener('DOMContentLoaded', typeEffect);
+
+      // 2. SCROLL LOGIC (Auto Dark Mode + ScrollToTop Button)
+      const topBtn = document.querySelector(".scrollToTop-btn");
+      const themeBtn = document.querySelector(".theme-btn");
+      const body = document.body;
+      let manualThemeOverride = false; // Flag to check if user clicked the button
+
+      window.addEventListener('scroll', () => {
+          const scrollPosition = window.scrollY;
+          
+          // Show/Hide Scroll to Top Button
+          if (scrollPosition > 500) {
+            topBtn.classList.add("active");
+          } else {
+            topBtn.classList.remove("active");
+          }
+
+          // Auto Dark Mode (Only if user hasn't manually overridden)
+          if (!manualThemeOverride) {
+              const skillsSection = document.getElementById('skills').offsetTop - 300;
+              const resumeSection = document.getElementById('resume').offsetTop - 300;
+              const contactSection = document.getElementById('contact').offsetTop - 300;
+
+              if (scrollPosition >= skillsSection && scrollPosition < resumeSection) {
+                  body.classList.add('dark-mode');
+              } 
+              else if (scrollPosition >= resumeSection && scrollPosition < contactSection) {
+                  body.classList.remove('dark-mode');
+              } 
+              else if (scrollPosition >= contactSection) {
+                  body.classList.add('dark-mode');
+              } 
+              else {
+                  body.classList.remove('dark-mode');
+              }
+          }
+      });
+
+      // 3. CLICK EVENTS
+      
+      // Scroll To Top Click
+      topBtn.addEventListener("click", () => {
+          window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+          });
+      });
+
+      // Manual Theme Toggle Click
+      themeBtn.addEventListener("click", () => {
+          manualThemeOverride = true; // Stop auto-switching
+          body.classList.toggle("dark-mode");
+          
+          // Toggle Icon
+          const icon = themeBtn.querySelector("i");
+          if(body.classList.contains("dark-mode")) {
+              icon.classList.remove("fa-moon");
+              icon.classList.add("fa-sun");
+          } else {
+              icon.classList.remove("fa-sun");
+              icon.classList.add("fa-moon");
+          }
+      });
+
+      // Mobile Menu Toggle
+      const menuBtn = document.querySelector(".menu-btn");
+      const navigation = document.querySelector(".navigation");
+
+      menuBtn.addEventListener("click", () => {
+          navigation.classList.toggle("active");
+          menuBtn.classList.toggle("active");
+      });
+
+      // Close menu when clicking a link
+      document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+          navigation.classList.remove("active");
+          menuBtn.classList.remove("active");
+      }));
+
+    </script>
+</body>
 </html>
